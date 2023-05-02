@@ -1,7 +1,8 @@
 {
   "name": "juan_pablo_portfolio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
+  "homepage": "https://slardptor.github.io/portfolio/",
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@testing-library/jest-dom": "^5.16.3",

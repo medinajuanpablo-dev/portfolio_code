@@ -229,7 +229,7 @@ const PROYECTS = [
     picture: portfolioImage,
     title: "Portfolio",
     links: {
-      github: "https://github.com/SlarDptor/portfolio",
+      github: "https://github.com/SlarDptor/portfolio_code",
     },
     text: {
       default: "Just like the other projects, both the portfolio's design and code were fully developed by me from scratch. I didn't use any specific design nor any third-party template code.",
