@@ -89,10 +89,19 @@ function generateExtensions() {
     "screen-11/12": "91.67vw",
   };
 
-  for (let rem = 1; rem <= 200; rem += 1)
+  for (let rem = 1; rem <= 500; rem += 1)
     ext.spacing[rem] = `${(rem * 0.25).toPrecision(3)}rem`;
 
   for (let px = 1; px <= 50; px += 1) ext.spacing[`${px}px`] = `${px}px`;
+
+  ext.colors = {
+    kamai: {
+      DEFAULT: "#8A49D6",
+    },
+    slate: {
+      150: "#ebedf2",
+    },
+  };
 
   return ext;
 }
@@ -132,8 +141,9 @@ function generateDefinitions() {
     base: "1rem",
     lg: "1.125rem",
     xl: "1.25rem",
+    "1.5xl": "1.38rem",
     "2xl": "1.5rem",
-    "2.5xl": "1,687rem",
+    "2.5xl": "1.687rem",
     "3xl": "1.875rem",
     "3.5xl": "2rem",
     "4xl": "2.25rem",
@@ -146,7 +156,7 @@ function generateDefinitions() {
   for (let sc = 0; sc <= 100; sc += 5) {
     gg.scale[sc] = `${(sc / 100).toPrecision(5)}`;
   }
-  for (let sc = 100; sc <= 500; sc += 20) {
+  for (let sc = 100; sc <= 500; sc += 10) {
     gg.scale[sc] = `${(sc / 100).toPrecision(5)}`;
   }
 

@@ -88,7 +88,7 @@ const RECOGNIZERS = [
   "top", "left", "bottom", "right", //Inset
   "w", "h", //Width and Height
 
-  "translate-x", "translate-y", "cursor", "z", "justify", "items", "visible" //Others
+  "translate-x", "translate-y", "scale", "cursor", "z", "justify", "items", "visible" //Others
 ];
 
 export default mergeStyles;

@@ -21,7 +21,9 @@ import g1 from "./general/AsyncMounter";
 import w3 from "./general/StdWebElements/BgContainer";
 
 //Your project-specific Components imports.
-import a from "./Navigation";
+import a from "./SectionTitle";
+import b from "./icons/DevIcon";
+import c from "./icons/KamaiIcon";
 
 //General purpose Components exports. Keep them separated to ease updates.
 export const CuteInput = c1;
@@ -45,4 +47,6 @@ export const AsyncMounter = g1;
 export const BgContainer = w3;
 
 //Your project-specific Components exports.
-export const Navigation = a;
+export const SectionTitle = a;
+export const DevIcon = b;
+export const KamaiIcon = c;

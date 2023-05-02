@@ -9,7 +9,7 @@ import { useIndicatedStyles } from "@static/tailwind";
  * @param {React.Component} props.Icon The Component of the icon to display inside the button. Pass no children for an icon-only button.
  * @param {"default" | "larger" | "smaller"} props.size Prestyled sizes for font and spaces.
  * @param {"left" | "right"} props.iconSide The side of the `Icon` relative to the `text`. Is `left` by default.
- * @param {"slate" | "purple" | "indigo" | "red" | "orange" | "yellow" | "emerald"} props.color Prestyled colors for border and font (including the `Icon`). Is `slate` by default.
+ * @param {"slate" | "purple" | "indigo" | "red" | "orange" | "yellow" | "emerald" | "sky"} props.color Prestyled colors for border and font (including the `Icon`). Is `slate` by default.
  * @param {"default" | "lighter" | "stronger"} props.colorStrength Determines the strength of the selected color.
  * @param {"default" | "faster" | "slower" | "instant"} props.transitionSpeed The `default` speed is 300ms, changing in +150ms or -150ms with `slower` or `faster` respectively, while `instant` will remove the transition.
  * @param {StylesObject} props.straightStyles An object containing directed styles for each element. Place the styles directly here without declaring a whole new Styles Object. _Remove props changing the same styles this changes_.
@@ -56,8 +56,8 @@ function CuteButton({
  * @property {string} icon
  */
 const DIRECTED_STYLES = {
-  button: "flex items-center justify-center py-2 px-8 border-1 rounded-md transition-color duration-300 || it<transition-none> ft<duration-150> st<duration-450> sm<text-sm'px-6> lg<text-lg'px-10>",
-  icon: "text-lg | io<ml-0'mr-0> il<mr-2> ir<ml-2> sm<text-base> lg<text-xl>",
+  button: "flex items-center justify-center py-2 px-8 border-1 rounded-md transition-color duration-300 || it<transition-none> ft<duration-150> st<duration-450> sm<text-sm'px-6> lg<text-lg'px-10'lg:text-xl> ",
+  icon: "text-lg | io<ml-0'mr-0> il<mr-2> ir<ml-2> sm<text-base> lg<text-xl'lg:text-2xl>",
 };
 
 //prettier-ignore
@@ -106,6 +106,10 @@ const COLOR_STYLES = {
     emerald: "text-emerald-600 border-emerald-400 hover:text-slate-100 hover:bg-emerald-600 focus:text-slate-100 focus:bg-emerald-400 || "
       + " ao<hover:text-emerald-700'hover:border-emerald-500'focus:border-emerald-400'hover:bg-transparent'focus:text-emerald-500'focus:bg-transparent>"
       + " af<text-slate-100'bg-emerald-500>",
+    
+    sky: "text-sky-600 border-sky-400 hover:text-slate-100 hover:bg-sky-600 focus:text-slate-100 focus:bg-sky-400 || "
+      + " ao<hover:text-sky-700'hover:border-sky-500'focus:border-sky-400'hover:bg-transparent'focus:text-emerald-500'focus:bg-transparent>"
+      + " af<text-slate-100'bg-sky-500>",
   },
   lighter: {
     slate: "text-slate-500 border-slate-300 hover:text-slate-100 hover:bg-slate-500 focus:text-slate-100 focus:bg-slate-300 || "
@@ -135,6 +139,10 @@ const COLOR_STYLES = {
     emerald: "text-emerald-400 border-emerald-300 hover:text-slate-100 hover:bg-emerald-500 focus:text-slate-100 focus:bg-emerald-300 || "
       + " ao<hover:text-emerald-600'hover:border-emerald-400'focus:border-emerald-300'hover:bg-transparent'focus:text-emerald-400'focus:bg-transparent>"
       + " af<text-slate-100'bg-emerald-400>",
+    
+    sky: "text-sky-400 border-sky-300 hover:text-slate-100 hover:bg-sky-500 focus:text-slate-100 focus:bg-sky-300 || "
+      + " ao<hover:text-sky-600'hover:border-sky-400'focus:border-sky-300'hover:bg-transparent'focus:text-sky-400'focus:bg-transparent>"
+      + " af<text-slate-100'bg-sky-400>",
   },
   stronger: {
     slate: "text-slate-700 border-slate-500 hover:text-slate-100 hover:bg-slate-700 focus:text-slate-100 focus:bg-slate-500 || "
@@ -164,6 +172,10 @@ const COLOR_STYLES = {
     emerald: "text-emerald-700 border-emerald-500 hover:text-slate-100 hover:bg-emerald-700 focus:text-slate-100 focus:bg-emerald-500 || "
       + " ao<hover:text-emerald-800'hover:border-emerald-600'focus:border-emerald-500'hover:bg-transparent'focus:text-emerald-600'focus:bg-transparent>"
       + " af<text-slate-100'bg-emerald-600>",
+    
+    sky: "text-sky-700 border-sky-500 hover:text-slate-100 hover:bg-sky-700 focus:text-slate-100 focus:bg-sky-500 || "
+      + " ao<hover:text-sky-800'hover:border-sky-600'focus:border-sky-500'hover:bg-transparent'focus:text-sky-600'focus:bg-transparent>"
+      + " af<text-slate-100'bg-sky-600>",
   },
 };
 

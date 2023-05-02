@@ -1,7 +1,7 @@
 import React from "react";
 
 import { checkRequiredValues } from "@static/functions";
-import { BREAKPOINTS_WIDTHS } from "@static/values/general"; //Remove this and import or define your app's breakpoints instead.
+import { BREAKPOINTS_WIDTHS } from "@static/values/config"; //Remove this and import or define your app's breakpoints instead.
 import { BREAKPOINTS as BPK } from "@static/values/keys";
 
 /**
