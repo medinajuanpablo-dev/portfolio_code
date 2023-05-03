@@ -192,7 +192,7 @@ const LISTS = {
       },
     },
     {
-      name: { default: "English", spanish: "Inglés Hablado" },
+      name: { default: "English", spanish: "Inglés" },
       fillStyle: "w-8/12",
       description: {
         default:
