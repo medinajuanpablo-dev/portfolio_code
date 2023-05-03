@@ -87,7 +87,9 @@ function Proyects({ lang }) {
                     </a>
                   )}
                   {Object.keys(proy.links).length == 0 && (
-                    <p className={STYLES.proyNoLinks}>No available links</p>
+                    <span className={STYLES.proyNoLinks}>
+                      No available links
+                    </span>
                   )}
                 </p>
                 <p className={STYLES.proyText}>{proy.text[lang]}</p>

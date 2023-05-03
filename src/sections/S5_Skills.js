@@ -169,7 +169,10 @@ const LISTS = {
       },
     },
     {
-      name: "Redux and API connections",
+      name: {
+        default: "Redux and API connections",
+        spanish: "Redux y conexiones de API",
+      },
       fillStyle: "w-9/12",
       description: {
         default:
@@ -219,7 +222,7 @@ const LISTS = {
       },
     },
     {
-      name: "APIs with Express.js",
+      name: { default: "APIs with Express.js", spanish: "APIs con Express.js" },
       fillStyle: "w-5/12",
       description: {
         default:
@@ -229,7 +232,7 @@ const LISTS = {
       },
     },
     {
-      name: "Databases",
+      name: { default: "Data bases", spanish: "Bases de datos" },
       fillStyle: "w-3/12",
       description: {
         default:
@@ -239,13 +242,13 @@ const LISTS = {
       },
     },
     {
-      name: "Others",
+      name: { default: "Others", spanish: "Otros" },
       fillStyle: "w-1/12",
       description: {
         default:
-          "I've worked with a few technologies years ago but didn't continue with them, so I only know the very basics: C language, Java language and Machine Learning. This last one has had an explosive growth lately and so I'm currently returning to learning it.",
+          "I've worked with a few technologies years ago that didn't meet the need to be continued, so I only know the very basics: C language, Java language and Machine Learning. This last one has had an explosive growth lately and so I'm currently returning to learning it.",
         spanish:
-          "Trabajé con algunas tecnologías años atrás pero no las continué, así que sólo sé lo básico: lenguaje C, lenguaje Java y Machine Learning. Esta última tuvo un crecimiento explosivo últimamente, por lo que estoy volviendo a aprenderlo.",
+          "Trabajé con algunas tecnologías años atrás que no me vi en la necesidad de continuar, así que sólo sé lo básico: lenguaje C, lenguaje Java y Machine Learning. Esta última tuvo un crecimiento explosivo últimamente, por lo que estoy volviendo a aprenderlo.",
       },
     },
   ],
@@ -257,7 +260,7 @@ const LISTS = {
         default:
           "All my hard skills have been self-taught at full: tech skills, design and even english. I know how to research properly and if something I don't know has to be done I will learn how to do it eventually.",
         spanish:
-          "Todas mis habilidades fueron auto-enseñadas completamente: las técnicas, diseño e incluso inglés.  I know how to research properly y si debe hacerse algo que no sé hacer, voy a aprender a hacerlo eventualmente.",
+          "Todas mis habilidades fueron auto-enseñadas completamente: las técnicas, diseño e incluso inglés. Sé cómo investigar adecuadamente y, si debe hacerse algo que no sé hacer, voy a aprender a hacerlo eventualmente.",
       },
     },
     {
@@ -278,9 +281,9 @@ const LISTS = {
       fillStyle: "w-7/12",
       description: {
         default:
-          "I'm always able of keeping myself together when under pressure; I'm hardly emotionally driven away. I'm an empathic person that knows how understand and get along with co-workers, and discover the best way to work with them. Still, I lack some experience working in a relatively big team.",
+          "I lack some experience working in a relatively big team, but I'm always able of keeping myself together when under pressure. I'm a good listener and know how to both colaborate and lead a development team. ",
         spanish:
-          "Siempre soy capaz de mantenerme bien estando bajo presión; difícilmente me dejo llevar emocionalmente. Soy una persona empática que sabe cómo entender y llevarse bien con compañeros de trabajo, y sé descubrir la mejor manera de trabajar con ellos. Aún así, me falta experiencia trabajando en equipos relativamente grandes.",
+          "Me falta experiencia trabajando en equipos relativamente grandes, pero siempre soy capaz de mantenerme bien estando bajo presión. Sé escuchar y tanto colaborar como liderar a un equipo de desarrollo.",
       },
     },
     {

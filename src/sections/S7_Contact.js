@@ -30,7 +30,15 @@ function Contact({ lang }) {
             </a>
           </p>
           <p className={STYLES.contact}>
-            <MdLocationOn className={STYLES.contactIcon} /> Jujuy, Argentina
+            <IoLogoGithub className={STYLES.contactIcon} />{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className={STYLES.contactLink}
+              href="https://github.com/SlarDptor"
+            >
+              @SlarDptor
+            </a>
           </p>
         </div>
         <div className={STYLES.dataRow}>
@@ -46,15 +54,7 @@ function Contact({ lang }) {
             </a>
           </p>
           <p className={STYLES.contact}>
-            <IoLogoGithub className={STYLES.contactIcon} />{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className={STYLES.contactLink}
-              href="https://github.com/SlarDptor"
-            >
-              @SlarDptor
-            </a>
+            <MdLocationOn className={STYLES.contactIcon} /> Jujuy, Argentina
           </p>
         </div>
       </div>

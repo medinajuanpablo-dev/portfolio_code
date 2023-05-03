@@ -70,6 +70,7 @@ function Top({ lang, setLang }) {
         <div className={styles.topRight}>
           {LINKS.map((ql) => (
             <button
+              key={ql.section}
               onClick={() => onLinkClick(`section-${ql.section}`)}
               className={styles.topLink}
             >
@@ -104,6 +105,7 @@ function Top({ lang, setLang }) {
 
             {LINKS.map((ql) => (
               <button
+                key={ql.section}
                 onClick={() => onLinkClick(`section-${ql.section}`)}
                 className={styles.sideLink}
               >
@@ -137,7 +139,7 @@ function Top({ lang, setLang }) {
 
 //prettier-ignore
 const DIRECTED_STYLES = {
-  ct: "z-60 fixed w-full shadow-md flex justify-between px-4 py-3 items-center text-ptserif-700 transition duration-1000 | sm:py-4 | md:py-2 | lg:px-6 || nt<bg-slate-200>",
+  ct: "z-60 fixed w-full flex justify-between px-4 py-3 items-center text-ptserif-700 transition duration-1000 | sm:py-4 | md:py-2 | lg:px-6 || nt<bg-slate-200'shadow-md>",
   
   logo: "relative flex items-center text-2xl text-strong tracking-wider cursor-pointer | sm:text-2.5xl | md:text-xl | lg:text-2xl",
   logoIcon: "w-8 h-8 mr-3 shrink-0 text-slate-200 transition duration-1000 | sm:w-10 sm:h-10 | md:w-6 md:h-6 | lg:w-8 lg:h-8 || nt<text-slate-600>",
