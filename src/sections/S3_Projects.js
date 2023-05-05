@@ -3,6 +3,8 @@ import { Element as ScrollableContainer } from "react-scroll";
 import { MdArrowForwardIos, MdLaptop } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
+import { BsClock } from "react-icons/bs";
+import { GiSwordSpade } from "react-icons/gi";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -12,9 +14,6 @@ import { useBreakpoint } from "@static/react";
 import { BREAKPOINTS_WIDTHS } from "@static/values/config";
 import { BREAKPOINTS as BPK } from "@static/values/keys";
 
-import chqpImage from "@static/values/images/chqp.png";
-import timehudImage from "@static/values/images/timeHud.png";
-import wdImage from "@static/values/images/wd.png";
 import portfolioImage from "@static/values/images/portfolio.png";
 import tooledTemplateImage from "@static/values/images/tooledTemplate.png";
 
@@ -139,6 +138,10 @@ const STYLES = {
   balancerIcon: "absolute -bottom-8 right-6 h-50 w-50 text-slate-400 text-opacity-10",
 
   kamai: "w-48 h-48 p-8 rounded-full bg-kamai text-white | sm:w-56 sm:h-56 | md:w-48 md:h-48",
+  chqp: "w-48 h-48 pb-4 pl-2 flex justify-center items-center text-strong text-5.5xl tracking-widest rounded-full border-4 border-purple-500 text-purple-500 | sm:w-56 sm:h-56 | md:w-48 md:h-48",
+  timeHUD: "w-48 h-48 p-10 rounded-full bg-teal-700 bg-opacity-80 border-slate-200 border-1 text-slate-200 | sm:w-56 sm:h-56 | md:w-48 md:h-48",
+  wd: "w-48 h-48 flex justify-center items-center rounded-full border-4 border-slate-200 text-slate-200 | sm:w-56 sm:h-56 | md:w-48 md:h-48",
+  wdIcon: "w-26 h-26",
 };
 
 const TRANSLATE_TEXT = {
@@ -184,7 +187,18 @@ const PROYECTS = [
     },
   },
   {
-    picture: chqpImage,
+    picture: portfolioImage,
+    title: "Portfolio",
+    links: {
+      github: "https://github.com/SlarDptor/portfolio_code",
+    },
+    text: {
+      default: "Just like the other projects, both the portfolio's design and code were fully developed by me from scratch. I didn't use any specific design nor any third-party template code.",
+      spanish: "Así como con los otros proyectos, tanto el diseño como el código del portfolio fueron totalmente desarrollados por mí desde la base. No usé ningún diseño específico ni ninguna plantilla de código de terceros.",
+    },    
+  },
+  {
+    icon: <p className={STYLES.chqp}>chqp</p>,
     title: "Cuánto Hay Que Poner",
     links: {
       web: "https://slardptor.github.io/cuantohayqueponer/",
@@ -196,15 +210,15 @@ const PROYECTS = [
     },    
   },
   {
-    picture: timehudImage,
+    icon: <BsClock className={STYLES.timeHUD} />,
     title: "Time HUD",
     links: {
       web: "https://slardptor.github.io/time_hud/",
       github: "https://github.com/SlarDptor/time_hud",
     },
     text: {
-      default: "An application I made for myself, to both keep track of how much time I spend in certain ambits and to set myself time objectives and limits on said ambits. As it's for self-use only, I built it in just a week by recycling code and design from other projects.",
-      spanish: "Una aplicación que hice para mí mismo, tanto para mantener un registro de cuánto tiempo gasto en ciertos ámbitos como también para establecerme objectivos y límites en dichos ámbitos. Como es para uso propio, la construí en sólo una semana reciclando código y diseños de otros proyectos.",
+      default: "An application I made for myself, to both keep track of how much time I spend in certain ambits and to set myself time objectives and limits on said ambits. As it's for self-use only, I built it in just a few weeks by recycling code and design from other projects.",
+      spanish: "Una aplicación que hice para mí mismo, tanto para mantener un registro de cuánto tiempo gasto en ciertos ámbitos como también para establecerme objectivos y límites en dichos ámbitos. Como es para uso propio, la construí en sólo algunas semanas reciclando código y diseños de otros proyectos.",
     },    
   },
   {
@@ -217,7 +231,7 @@ const PROYECTS = [
     },    
   },
   {
-    picture: wdImage,
+    icon: <p className={STYLES.wd}><GiSwordSpade className={STYLES.wdIcon} /></p>,
     title: "Work Defense",
     links: {
       github: "https://github.com/SlarDptor/work_defense",
@@ -225,17 +239,6 @@ const PROYECTS = [
     text: {
       default: "An interface-based management game that aims to both be fun and to help life motivation by rewarding real work with in-game resources. I started this years ago and developed it slowly and lovefully; it teached me a lot along the way. It's currently about 80% finished and in full english.",
       spanish: "Un juego de gestión basado en interfaces cuyo objetivo es tanto divertir como motivar en la vida recompensando el trabajo real con recursos dentro del juego. Lo empecé hace años y fui desarrollándolo lenta y cariñosamente; me enseñó muchísimo en el camino. Está aproximadamente un 80% terminado y sólo en inglés.",
-    },    
-  },
-  {
-    picture: portfolioImage,
-    title: "Portfolio",
-    links: {
-      github: "https://github.com/SlarDptor/portfolio_code",
-    },
-    text: {
-      default: "Just like the other projects, both the portfolio's design and code were fully developed by me from scratch. I didn't use any specific design nor any third-party template code.",
-      spanish: "Así como con los otros proyectos, tanto el diseño como el código del portfolio fueron totalmente desarrollados por mí desde la base. No usé ningún diseño específico ni ninguna plantilla de código de terceros.",
     },    
   },
 ];

@@ -13,12 +13,8 @@ const STYLES = {
 
 const TRANSLATE_TEXT = {
   text: {
-    default: (
-      <>This is the portfolio's end. Current version is {pckg.version}.</>
-    ),
-    spanish: (
-      <>Aquí termina el portfolio. La versión actual es {pckg.version}.</>
-    ),
+    default: <>End of the portfolio. Current version is {pckg.version}.</>,
+    spanish: <>Final del portfolio. La versión actual es {pckg.version}.</>,
   },
 };
 

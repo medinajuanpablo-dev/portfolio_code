@@ -4,8 +4,11 @@ import { GiSkills } from "react-icons/gi";
 import { BsEnvelopeFill } from "react-icons/bs";
 
 import { SectionTitle, CuteButton } from "@common/index";
+import { useBreakpoint } from "@static/react";
 
 function Experience({ lang }) {
+  const bp = useBreakpoint();
+
   function onButtonClick(to) {
     scroller.scrollTo(to, {
       smooth: true,
@@ -55,14 +58,14 @@ const STYLES = {
 
 const TRANSLATE_TEXT = {
   title: {
-    default: "Three years of Experience",
-    spanish: "Tres años de Experiencia",
+    default: "Experience & About me",
+    spanish: "Experiencia y Sobre mí",
   },
   text: {
     default:
-      "I had a fullstack role at Sana Digital for 3 years while also working on my own web projects. Experience has teached me the relevance of simplicity, and of finding a balance between efficiency and stability. I'm always craving to keep practicing, researching and learning more.",
+      "Out of my 27 years of life, five were focused on multiple ways of training that turned me into thinking as a programmer. The following three years I had a role at Sana Digital along advances on multiple personal web projects. I focus on the details without losing agility and while meeting a balance between eficiency and stability. ",
     spanish:
-      "Trabajé en Sana Digital durante 3 años mientras también avanzaba en mis propios proyectos web. La experiencia me enseñó la importancia de lo simple, y de encontrar un equilibrio entre la eficiencia y la estabilidad. Siempre busco seguir practicando, investigando y aprendiendo más.",
+      "De mis 27 años de vida, cinco fueron dedicados a múltiples formaciones que me hicieron pensar como programador, y los siguientes tres años trabajé en Sana Digital junto a múltiples proyectos web propios. Me enfoco en los detalles sin perder agilidad y conociendo la importancia del equilibrio entre la eficiencia y lo estable.",
   },
   skillsButton: {
     default: "See Skills",
@@ -73,5 +76,19 @@ const TRANSLATE_TEXT = {
     spanish: "Contáctame",
   },
 };
+
+/**
+ * De mis 27 años de vida, cinco fueron dedicados a múltiples formaciones, proyectos y avances privados de
+ * diversos tipos que formaron mi mente para pensar como programador. Los siguientes tres años ocupé un puesto
+ *  formal como desarrollador en Sana Digital simultáneamente con avances en múltiples proyectos web propios.
+ *
+ * Soy un programador detallista y concentrado en la estabilidad sin perder agilidad. La experiencia me enseñó
+ * la importancia de lo simple y del equilibrio entre la eficiencia y lo estable. Estoy siempre buscando seguir
+ *  practicando, investigando y aprendiendo más.
+ *
+ *
+ * De mis 27 años de vida, cinco fueron dedicados a múltiples formaciones que me hicieron pensar como programador. Los siguientes tres años trabajé en Sana Digital junto a múltiples proyectos web propios. Me enfoco en los detalles sin perder agilidad y conociendo la importancia del equilibrio entre la eficiencia y lo estable.
+ *
+ */
 
 export default Experience;

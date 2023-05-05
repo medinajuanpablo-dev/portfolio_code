@@ -58,15 +58,15 @@ const TRANSLATE_TEXT = {
   },
   text: {
     default:
-      "With 3 years of experience, a good english to work remotely, proficiency with React/Redux and Design, and decisive ability to communicate and keep everything reported / documented, I'm able to professionaly contribute to or lead a web developing team, or to do it alone too.",
+      "With years of experience, competent english, proficiency with React/Redux and Design, and decisive capacity to communicate and document what's necessary, I'm capable of professionaly contributing to or leading a web development team, or work alone too.",
     spanish:
-      "Con 3 años de experiencia, un buen inglés para trabajar remoto, habilidad con React/Redux y Diseño, y una capacidad decisiva para comunicarme y mantener todo informado / documentado, soy capaz de contribuir o liderar profesionalmente un equipo de desarrollo web, o también hacerlo solo.",
+      "Con años de experiencia, un inglés competente, habilidad con React/Redux y Diseño, y capacidad decisiva para comunicarme y documentar lo necesario, poseo la capacidad de contribuir o liderar profesionalmente un equipo de desarrollo web, o también trabajar solo.",
   },
   text2: {
     default:
-      "I learned all my skills by my own. I know very well how to research and study by myself, and I'm capable of learning whatever is necessary to work and adapt to any circumstance.",
+      "I have full aptitude for self-learning as all my skills were learned on my own after years of training. I'm widely able of learning what's necessary to work and adapt to any circumstance.",
     spanish:
-      "Aprendí todas mis habilidades por mi cuenta. Sé muy bien como investigar y estudiar yo solo, y soy capaz de aprender lo necesario para trabajar y adaptarme a cualquier circunstancia.",
+      "Tengo plena aptitud para el autoaprendizaje pues todas mis habilidades fueron aprendidas por cuenta propia tras años de formación. Soy capaz de aprender lo que sea necesario para trabajar y adaptarme a cualquier circunstancia.",
   },
 };
 
