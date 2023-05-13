@@ -106,9 +106,9 @@ function Contact({ lang }) {
 
 //prettier-ignore
 const STYLES = {
-  ct: "relative -mt-6 pb-10 px-6 bg-slate-150 | sm:px-10 sm:-mt-12 | md:mt-0 ",
+  ct: "relative -mt-6 pb-10 px-6 bg-slate-150 | sm:px-10 sm:-mt-12 | md:mt-0",
 
-  text: "mt-6 text-slate-700 text-very-light text-xl text-center mb-8 | sm:mt-8 sm:mb-10 sm:text-1.5xl | md:text-xl | lg:text-1.5xl lg:px-4",
+  text: "mt-6 text-slate-700 text-very-light text-xl text-center mb-8 | sm:mt-8 sm:mb-10 sm:text-1.5xl | md:text-xl | lg:px-8",
 
   contact: "mt-6 text-slate-700 text-xl flex justify-center items-center | sm:mt-8 sm:text-2xl | md:text-xl md:mt-6 | lg:mx-4 lg:mt-0 lg:text-1.5xl",
   contactIcon: "text-3xl text-sky-600 mr-3 | sm:text-4xl sm:mr-4 | md:text-3xl md:mr-3",

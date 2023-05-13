@@ -133,7 +133,7 @@ const STYLES = {
   proyLinkIcon: "mr-2 text-3xl mb-1",
   proyLinkText: "border-b-2 pb-1 border-indigo-300 border-opacity-0 transition duration-300 hover:border-opacity-70",
   proyNoLinks: "text-slate-300 text-light text-center text-opacity-60 | sm:text-lg sm:text-opacity-50",
-  proyText: "mt-8 pb-4 text-lg text-very-light text-slate-200 tracking-wide !leading-normal break-words text-left | sm:text-xl sm:text-opacity-90 | md:mt-6 | md:text-justify",
+  proyText: "mt-8 pb-4 text-lg text-very-light text-slate-200 tracking-wide !leading-normal break-words text-left | sm:text-opacity-90 | md:mt-6 | md:text-justify",
 
   balancerIcon: "absolute -bottom-8 right-6 h-50 w-50 text-slate-400 text-opacity-10",
 
@@ -146,8 +146,8 @@ const STYLES = {
 
 const TRANSLATE_TEXT = {
   title: {
-    default: "My Jobs and Projects",
-    spanish: "Trabajos y Proyectos",
+    default: "My Projects",
+    spanish: "Mis Proyectos",
   },
   webLink: {
     default: "Go to web",
@@ -165,17 +165,6 @@ const BACKGROUND =
 //prettier-ignore
 const PROYECTS = [
   {
-    picture: "https://sana-public-files.s3.amazonaws.com/sana.png",
-    title: "Sana Digital",
-    links: {
-      web: "https://www.sanadigital.com",
-    },
-    text: {
-      default: "I worked at Sana Digital as a full stack developer since 2019 for about 2 years, and then my role focused into web development only for the 3rd year. I contributed for a big portion of the design, backend and project management, and the web frontend was entirely built and mantained by me.",
-      spanish: "Trabajé en Sana Digital como desarrollador fullstack desde 2019 durante aproximadamente 2 años, después mi rol se enfocó en sólo desarrollo web durante el 3er año. Contribuí en gran parte al diseño, backend y coordinación del proyecto, y el frontend web fue totalmente construido y mantenido por mí.",
-    },
-  },
-  {
     icon: <KamaiIcon className={STYLES.kamai} />,
     title: "Kamai",
     links: {
@@ -185,17 +174,6 @@ const PROYECTS = [
       default: "A personal start-up project of selling minimalistic, elegant and affordable web pages locally in Argentina. The link redirects to an example production page; the main web is currently on development.",
       spanish: "Un emprendimiento personal sobre vender localmente páginas web minimalistas, elegantes y accesibles económicamente. El link redirige a una página producto de ejemplo; la web principal está aún en desarrollo.",
     },
-  },
-  {
-    picture: portfolioImage,
-    title: "Portfolio",
-    links: {
-      github: "https://github.com/SlarDptor/portfolio_code",
-    },
-    text: {
-      default: "Just like the other projects, both the portfolio's design and code were fully developed by me from scratch. I didn't use any specific design nor any third-party template code.",
-      spanish: "Así como con los otros proyectos, tanto el diseño como el código del portfolio fueron totalmente desarrollados por mí desde la base. No usé ningún diseño específico ni ninguna plantilla de código de terceros.",
-    },    
   },
   {
     icon: <p className={STYLES.chqp}>chqp</p>,
@@ -239,6 +217,17 @@ const PROYECTS = [
     text: {
       default: "An interface-based management game that aims to both be fun and to help life motivation by rewarding real work with in-game resources. I started this years ago and developed it slowly and lovefully; it teached me a lot along the way. It's currently about 80% finished and in full english.",
       spanish: "Un juego de gestión basado en interfaces cuyo objetivo es tanto divertir como motivar en la vida recompensando el trabajo real con recursos dentro del juego. Lo empecé hace años y fui desarrollándolo lenta y cariñosamente; me enseñó muchísimo en el camino. Está aproximadamente un 80% terminado y sólo en inglés.",
+    },    
+  },
+  {
+    picture: portfolioImage,
+    title: "Portfolio",
+    links: {
+      github: "https://github.com/SlarDptor/portfolio_code",
+    },
+    text: {
+      default: "Just like the other projects, both the portfolio's design and code were fully developed by me from scratch. I didn't use any specific design nor any third-party template code.",
+      spanish: "Así como con los otros proyectos, tanto el diseño como el código del portfolio fueron totalmente desarrollados por mí desde la base. No usé ningún diseño específico ni ninguna plantilla de código de terceros.",
     },    
   },
 ];
