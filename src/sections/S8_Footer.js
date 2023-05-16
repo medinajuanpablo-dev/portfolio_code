@@ -8,13 +8,13 @@ function Footer({ lang }) {
 
 //prettier-ignore
 const STYLES = {
-  ct: "bg-slate-200 text-slate-700 text-light text-italic text-center py-4 | sm:text-xl | md:text-very-light md:py-2 md:text-lg | lg:text-xl",
+  ct: "bg-slate-200 text-slate-600 text-opacity-90 text-light text-italic text-center py-4 | sm:text-xl | md:text-very-light md:py-2 md:text-lg",
 };
 
 const TRANSLATE_TEXT = {
   text: {
-    default: <>End of the portfolio. Current version is {pckg.version}.</>,
-    spanish: <>Final del portfolio. La versión actual es {pckg.version}.</>,
+    default: `Thank you for visiting. Current version is ${pckg.version}.`,
+    spanish: `Gracias por visitar. La versión actual es ${pckg.version}.`,
   },
 };
 
