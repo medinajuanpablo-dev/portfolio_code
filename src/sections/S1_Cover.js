@@ -31,12 +31,12 @@ function Cover({ lang }) {
 
 //prettier-ignore
 const STYLES = {
-  ct: "relative h-screen px-6 pt-36 flex flex-col items-center | lg:pt-42",
+  ct: "relative h-screen px-4 pt-36 flex flex-col items-center | lg:pt-42",
   bg: "bg-cover bg-center",
 
-  title: "text-6xl tracking-wide text-stronger text-center text-slate-300 | lg:text-7xl",
+  title: "text-5.5xl tracking-wide text-stronger text-center text-slate-300 | lg:text-7xl",
 
-  subTitle: "border-dotted border-2 border-sky-600 w-full rounded-md text-mono text-3.5xl text-slate-300 text-opacity-90 text-shadow strongest text-center mt-16 py-4 px-4 tracking-wide | md:w-7/12 | lg:w-6/12 lg:mt-24 lg:text-4xl lg:border-3 || sLang<mt-16>",
+  subTitle: "border-dotted border-2 border-sky-600 w-full rounded-md text-mono text-3xl text-slate-300 text-opacity-90 text-shadow strongest text-center mt-16 py-3 px-3 w-10/12 tracking-wide | md:w-7/12 | lg:w-6/12 lg:mt-24 lg:text-4xl lg:border-3 || sLang<mt-16>",
 
   arrow: "text-5.5xl animate-bounce text-slate-100 absolute bottom-20 cursor-pointer | md:bottom-8 || sLang<mt-34> ",
 };

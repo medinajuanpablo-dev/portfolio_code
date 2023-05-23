@@ -87,7 +87,7 @@ function Proyects({ lang }) {
                   )}
                   {Object.keys(proy.links).length == 0 && (
                     <span className={STYLES.proyNoLinks}>
-                      No available links
+                      {TRANSLATE_TEXT.noLinks[lang]}
                     </span>
                   )}
                 </p>
@@ -156,6 +156,10 @@ const TRANSLATE_TEXT = {
   githubLink: {
     default: "Repository",
     spanish: "Repositorio",
+  },
+  noLinks: {
+    default: "No available links",
+    spanish: "Sin links disponibles",
   },
 };
 
