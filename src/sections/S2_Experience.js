@@ -1,10 +1,10 @@
 import React from "react";
 import { Element as ScrollableContainer, scroller } from "react-scroll";
 import { GiSkills } from "react-icons/gi";
-import { BsEnvelopeFill, BsBriefcaseFill, BsDot } from "react-icons/bs";
+import { BsEnvelopeFill } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 
-import { SectionTitle, CuteButton } from "@common/index";
+import { SectionTitle, CuteButton, KamaiIcon } from "@common/index";
 import { useBreakpoint } from "@static/react";
 
 function Experience({ lang }) {
@@ -20,7 +20,8 @@ function Experience({ lang }) {
 
   return (
     <ScrollableContainer name="section-experience" className={STYLES.ct}>
-      <SectionTitle>{TRANSLATE_TEXT.title[lang]}</SectionTitle>
+      <p className={STYLES.title}>{TRANSLATE_TEXT.title[lang]}</p>
+      <div className={STYLES.separator} />
 
       <p className={STYLES.text}>{TRANSLATE_TEXT.text[lang]}</p>
 
@@ -28,12 +29,7 @@ function Experience({ lang }) {
         {EXPERIENCE_ROLES.map((exp, index) => (
           <div key={index} className={STYLES.exp}>
             <div className={STYLES.expTitle}>
-              <img
-                alt="logoSana"
-                className={STYLES.expImage}
-                src="https://sana-public-files.s3.amazonaws.com/sana.png"
-              />
-              {exp.title[lang]}
+              {exp.logo} {exp.title[lang]}
             </div>
             <p className={STYLES.expSub}>
               {/* <BsBriefcaseFill className={STYLES.expIcon} /> */}
@@ -46,7 +42,7 @@ function Experience({ lang }) {
                 className={STYLES.expLink}
               >
                 <FiExternalLink className={STYLES.expLinkIcon} />
-                Ir a la web
+                {TRANSLATE_TEXT.goTo[lang]}
               </a>
             </p>
 
@@ -62,7 +58,8 @@ function Experience({ lang }) {
       <div className={STYLES.buttons}>
         <CuteButton
           size="larger"
-          color="sky"
+          color="indigo"
+          colorStrength="lighter"
           straightStyles={{ button: "flex-1 mr-1 lg<px-0> | md:mr-3" }}
           Icon={GiSkills}
           onClick={() => onButtonClick("section-skills")}
@@ -71,7 +68,8 @@ function Experience({ lang }) {
         </CuteButton>
         <CuteButton
           size="larger"
-          color="sky"
+          color="indigo"
+          colorStrength="lighter"
           straightStyles={{ button: "flex-1 ml-1 lg<px-0> | md:ml-3" }}
           Icon={BsEnvelopeFill}
           onClick={() => onButtonClick("section-contact")}
@@ -85,21 +83,25 @@ function Experience({ lang }) {
 
 //prettier-ignore
 const STYLES = {
-  ct: "px-6 pt-12 pb-14 bg-gray-100 | sm:px-10 | lg:px-28 lg:py-16",
+  ct: "pt-12 pb-14 bg-gray-100 | lg:py-16",
+  title: "text-center text-slate-600 text-strong w-87 m-auto text-3.5xl | sm:w-120 sm:text-4xl | lg:text-4.5xl",
+  separator: "mt-8 w-30 border-t-2 border-sky-500 mx-auto",
   
-  text: "mt-8 text-lg text-slate-700 text-very-light tracking-wide leading-relaxed text-center | md:px-16 | lg:px-20 lg:mt-12 lg:text-xl",
+  text: "mt-8 text-lg text-slate-700 text-very-light leading-relaxed text-center w-87 mx-auto | sm:w-130 | md:w-170 | lg:w-200 lg:mt-12 lg:text-xl | xl:w-260",
 
   expList: "justify-center | md:flex md:mt-12",
-  exp: "text-slate-600 border-t-1 border-slate-300 pt-6 mt-8 | md:border-y-1 md:py-8 md:mt-0 md:px-6 ",
-  expTitle: "flex justify-center items-center text-xl text-strong | lg:text-2xl",
-  expImage: "w-7 h-7 rounded-full mr-3 opacity-70 | lg:w-8 lg:h-8",
+  exp: "text-slate-600 border-t-1 border-slate-300 w-87 mx-auto pt-6 mt-8 | sm:w-120 sm:mt-10 sm:pt-8 | md:w-90 md:mx-6 md:border-y-1 md:py-8 md:mt-0 | lg:mx-8 lg:w-110 | xl:w-130 ",
+  expTitle: "flex justify-center items-center text-xl text-strong | lg:text-2xl | xl:text-2.5xl",
   expSub: "flex items-center text-sm text-light mb-3 mt-1 text-slate-500 justify-center | md:mb-4 | lg:text-base",
   expLink: "flex items-center justify-center border-l-1 border-slate-300 ml-3 pl-3 text-indigo-600 text-opacity-80 hover:text-opacity-100 focus:text-opacity-100",
   expLinkIcon: "mr-1 text-base | lg:text-lg",
   expIcon: "text-xl mr-2 text-sky-700 | lg:text-2xl",
-  expPoint: "flex pl-2 pr-2 text-sm text-very-light mt-1 text-slate-500 | md:justify-center | lg:text-base",
+  expPoint: "flex text-justify text-sm text-very-light mt-1 text-slate-500 | md:justify-center | lg:text-base | xl:text-lg",
 
-  buttons: "mt-10 flex w-full | sm:px-8 | md:px-0 md:w-8/12 md:mx-auto | lg:mt-12"
+  sanaLogo: "w-7 h-7 rounded-full mr-2 opacity-70 | lg:w-8 lg:h-8",
+  kamaiLogo: "w-7 h-7 text-kamai mt-1px mr-2 opacity-80 | lg:w-8 lg:h-8",
+
+  buttons: "mt-10 w-87 mx-auto flex | sm:w-100 sm:mt-12 | md:px-0 md:w-8/12 md:mx-auto | lg:mt-12"
 };
 
 const TRANSLATE_TEXT = {
@@ -109,9 +111,9 @@ const TRANSLATE_TEXT = {
   },
   text: {
     default:
-      "I'm a 27 years old detailed developer focused on stability without losing agility and conscious of the importance between eficiency and the stable. My passion is in intuitive and elegant user interfaces.",
+      "I'm a 27-year-old developer focused on the details while keeping an estable and agile work. My passion lies on creating intuitive and elegant interfaces, particularly on the web. I'm assertive and open-minded, highly self-taught, and I love to challenge myself and work on complex projects that push me to learn more. Welcome to my portfolio.",
     spanish:
-      "Soy un desarrollador de 27 años detallista y enfocado en la estabilidad sin perder agilidad, consciente de la importancia del equilibrio entre la eficiencia y lo estable. Mi pasión son las interfaces intuitivas y elegantes para el usuario. ",
+      "Soy un desarrollador de 27 años enfocado en los detalles y manteniendo un trabajo estable y ágil. Mi pasión está en las interfaces intuitivas y elegantes, así como en la web. Soy asertivo y de mente abierta, soy altamente autodidacta, y me encanta establecerme desafíos y proyectos complejos que me impulsen a aprender más. Bienvenido a mi portfolio.",
   },
   skillsButton: {
     default: "See Skills",
@@ -121,50 +123,52 @@ const TRANSLATE_TEXT = {
     default: "Contact me",
     spanish: "Contáctame",
   },
+  goTo: {
+    default: "Go to web",
+    spanish: "Ir a la web",
+  },
 };
 
 const EXPERIENCE_ROLES = [
   {
+    logo: (
+      <img
+        alt="logoSana"
+        className={STYLES.sanaLogo}
+        src="https://sana-public-files.s3.amazonaws.com/sana.png"
+      />
+    ),
     title: {
-      default: "Fullstack Dev en Sana Digital",
+      default: "Fullstack Dev at Sana Digital",
       spanish: "Fullstack Dev en Sana Digital",
     },
-    dates: { default: "Dec 2019 - 2021", spanish: "Dic 2019 — 2021" },
+    dates: { default: "Dec 2019 - Present", spanish: "Dic 2019 — Actualidad" },
     points: {
       default: [
-        "Development of the website from scratch.",
-        "Mobile app maintenance.",
-        "Contributor of the platform backend.",
-        "Development team leading.",
+        "In charge of developing the website from start to finish and leading the development team. Aditionally, I actively contribute to the backend of the platform and provide ocassional maintenance for the mobile app.",
       ],
       spanish: [
-        "Desarrollar la página web desde el inicio.",
-        "Mantenimiento de la aplicación móvil.",
-        "Contribuyente del backend de la plataforma.",
-        "Liderazgo del equipo de desarrollo.",
+        "A cargo de desarrollar el sitio web por completo y liderar el equipo de desarrollo. Además, contribuyo activamente al backend de la plataforma y doy mantenimiento ocasional a la aplicación móvil.",
       ],
     },
     link: "https://www.sanadigital.com/",
   },
   {
+    logo: <KamaiIcon className={STYLES.kamaiLogo} />,
     title: {
-      default: "Web Dev en Sana Digital",
-      spanish: "Web Dev en Sana Digital",
+      default: "Founder of Kamai",
+      spanish: "Fundador de Kamai",
     },
-    dates: { default: "2021 - Feb 2023", spanish: "2021 - Feb 2023" },
+    dates: { default: "Jun 2022 - Present", spanish: "Jun 2022 - Actualidad" },
     points: {
       default: [
-        "Focus most on the website development.",
-        "Contributor of the platform backend.",
-        "Leadership of the development team.",
+        "Start-up focused on development of fully customized web systems of all types, as well as complete digital presentations. It started over a year ago and after a lot of work we managed to set ground and grow.",
       ],
       spanish: [
-        "Mayor foco en el desarrollo de la página Web.",
-        "Contribuyente del backend de la plataforma.",
-        "Liderazgo del equipo de desarrollo.",
+        "Start-up de desarrollo de sistemas web personalizados de todo tipo y presentaciones digitales completas. Empezó hace más de un año y tras mucho trabajo logramos asentarnos y crecer.",
       ],
     },
-    link: "https://www.sanadigital.com/",
+    link: "https://www.kamai.com.ar/",
   },
 ];
 

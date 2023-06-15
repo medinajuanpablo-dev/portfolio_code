@@ -106,11 +106,11 @@ function Contact({ lang }) {
 
 //prettier-ignore
 const STYLES = {
-  ct: "relative -mt-6 pb-10 px-6 bg-slate-150 | sm:px-10 sm:-mt-12 | md:mt-0",
+  ct: "relative -mt-6 pb-10 bg-slate-150 | sm:px-10 sm:-mt-12 | md:mt-0",
 
-  text: "mt-6 text-slate-700 text-very-light text-xl text-center mb-8 | sm:mt-8 sm:mb-10 sm:text-1.5xl | md:text-xl | lg:px-8",
+  text: "mt-6 text-slate-700 text-very-light text-xl text-center mb-8 w-87 mx-auto | sm:w-120 sm:mt-8 sm:mb-10 sm:text-1.5xl | md:w-auto md:text-xl | lg:px-8",
 
-  contact: "mt-6 text-slate-700 text-xl flex justify-center items-center | sm:mt-8 sm:text-2xl | md:text-xl md:mt-6 | lg:mx-4 lg:mt-0 lg:text-1.5xl",
+  contact: "mt-6 text-slate-700 text-xl flex justify-center items-center | sm:mt-8 sm:text-2xl | md:text-xl md:mt-6 | lg:mx-4 lg:mt-0",
   contactIcon: "text-3xl text-sky-600 mr-3 | sm:text-4xl sm:mr-4 | md:text-3xl md:mr-3",
   contactLink: "text-indigo-700 border-b-1 border-opacity-50 border-indigo-700",
 
@@ -119,7 +119,7 @@ const STYLES = {
   wrapper: "flex",
   dataRow: "| lg:flex lg:justify-center lg:mt-8",
   sideImage: "grow bg-right bg-cover",
-  contentBox: "bg-slate-100 w-7/12 shrink-0 px-8 py-10 | lg:w-6/12 lg:pt-14 lg:pb-16",
+  contentBox: "bg-slate-100 w-7/12 shrink-0 px-12 py-10 | lg:px-4 lg:w-6/12 lg:pt-14 lg:pb-16",
 };
 
 const TRANSLATE_TEXT = {
@@ -130,9 +130,9 @@ const TRANSLATE_TEXT = {
 
   text: {
     default:
-      "I'm currently open for a partial or full time job. If you're interested in my profile, please send me an email or leave me a message at LinkedIn.",
+      "To contact me please send me an email or leave me a message at LinkedIn.",
     spanish:
-      "Actualmente estoy disponible para un trabajo a tiempo parcial o completo. Si estás interesado en mi perfil, por favor envíame un correo o déjame un mensaje en LinkedIn.",
+      "Para contactarme por favor envíame un correo electrónico o déjame un mensaje en LinkedIn.",
   },
 };
 

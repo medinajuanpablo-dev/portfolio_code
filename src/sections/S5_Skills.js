@@ -37,7 +37,10 @@ function Skills({ lang }) {
           colorStrength="stronger"
           colorsBehavior="always-filled"
           Icon={ButtonIcon}
-          straightStyles={{ button: "mt-4 mb-2 text-lg", icon: "text-2xl" }}
+          straightStyles={{
+            button: "mt-4 mb-2 text-lg | md:mb-8",
+            icon: "text-2xl",
+          }}
         >
           {showingSoft
             ? TRANSLATE_TEXT.seeHard[lang]
@@ -99,11 +102,11 @@ const STYLES = {
   ct: "pt-4 pb-8 h-160 overflow-y-scroll flex flex-col items-center | sm:h-180 sm:pb-12 sm:pt-8 | md:h-auto md:px-12 md:pt-12",
   bg: "bg-cover bg-center py-8 | md:py-0",
 
-  skill: "mt-6 px-8 self-stretch | md:px-2",
+  skill: "mt-6 mx-auto self-stretch w-87 | sm:w-140 | md:w-auto",
   skillTitle: "text-slate-200 text-center text-2xl flex justify-center items-center cursor-pointer trasition duration-200 hover:text-sky-500 focus:text-sky-500 | lg:text-2.5xl",
   skillExpander: "ml-1 mt-6px shrink-0",
   skillDescription: "mt-2 mb-4 text-slate-200 text-very-light text-center | lg:text-lg lg:text-opacity-90",
-  skillBar: "relative mt-3 border-2 border-sky-800 h-8 rounded-full flex items-center | sm:mx-12 | md:mx-4 | lg:mx-12 lg:h-9",
+  skillBar: "relative mt-3 border-2 border-sky-800 h-8 rounded-full flex items-center | sm:mx-12 | md:mx-4 | lg:mx-6 lg:h-9",
   skillBarFill: "absolute z-0 left-0 top-0 rounded-l-full h-full bg-sky-800 ",
   skillBarMarker: "relative text-sm tracking-wide text-center w-4/12 z-10 text-slate-100 border-r-1 border-slate-100 | sm:text-light sm:text-base | md:text-sm | lg:text-base",
   skillBarMarkerLast: "relative text-sm tracking-wide text-center w-4/12 z-10 text-slate-100 | sm:text-light sm:text-base | md:text-sm | lg:text-base",
@@ -113,7 +116,7 @@ const STYLES = {
   //Desktop only
 
   list: "flex self-stretch",
-  listCol: "flex-1 overflow-y-scroll | md:h-136 | lg:h-150",
+  listCol: "flex-1 pr-4 overflow-y-scroll | md:h-136 | lg:h-150",
 };
 
 const TRANSLATE_TEXT = {

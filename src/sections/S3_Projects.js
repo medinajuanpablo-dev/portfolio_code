@@ -16,6 +16,7 @@ import { BREAKPOINTS as BPK } from "@static/values/keys";
 
 import portfolioImage from "@static/values/images/portfolio.png";
 import tooledTemplateImage from "@static/values/images/tooledTemplate.png";
+import { typeOf } from "@static/functions";
 
 function Proyects({ lang }) {
   const bp = useBreakpoint();
@@ -57,7 +58,9 @@ function Proyects({ lang }) {
                 ) : (
                   proy.icon
                 )}
-                <p className={STYLES.proyTitle}>{proy.title}</p>
+                <p className={STYLES.proyTitle}>
+                  {typeOf(proy.title, "string") ? proy.title : proy.title[lang]}
+                </p>
                 <p className={STYLES.proyLinksCt}>
                   {proy.links.web && (
                     <a
@@ -119,12 +122,12 @@ const STYLES = {
   
   list: "relative w-full",
 
-  arrowCt: "z-50 absolute top-50 cursor-pointer text-sky-500 p-3 rounded-full transition duration-300 border-sky-600 border-opacity-30 border-2 hover:border-opacity-80 focus:border-opacity-80 | lg:top-50",
+  arrowCt: "z-50 absolute top-50 cursor-pointer text-sky-500 p-3 rounded-full transition duration-300 border-sky-600 border-opacity-30 border-2 hover:border-opacity-80 focus:border-opacity-80 | md:top-40 | lg:top-50",
   arrow: "translate-x-1px text-xl | lg:text-2xl",
   arrowLeft: " rotate-180 left-4 | sm:left-10 | md:left-20  lg:-left-4",
   arrowRight: " right-4 | sm:right-10 | md:right-20 | lg:-right-4",
 
-  proyect: "relative flex flex-col items-center mx-4 px-4 pt-12 | sm:px-8 | md:pt-8 | lg:px-4",
+  proyect: "relative flex flex-col items-center mx-auto pt-12 w-85 | sm:w-120 | md:w-160 md:pt-8 | lg:w-110 | xl:w-130",
   proyPicture: "rounded-full w-48 h-48 bg-cover bg-center shadow-md | sm:w-56 sm:h-56 | md:w-48 md:h-48",
   proyIcon: "",
   proyTitle: "mt-8 text-2.5xl text-strong text-slate-200 tracking-wide | sm:text-3xl | md:mt-6 | lg:text-3.5xl",
@@ -170,13 +173,13 @@ const BACKGROUND =
 const PROYECTS = [
   {
     icon: <KamaiIcon className={STYLES.kamai} />,
-    title: "Kamai",
+    title: { default: "Kamai — Web Systems", spanish: "Kamai — Sistemas Web" },
     links: {
-      web: "https://e-kamai.github.io/medicoejemplo/",
+      web: "https://www.kamai.com.ar",
     },
     text: {
-      default: "A personal start-up project of selling minimalistic, elegant and affordable web pages locally in Argentina. The link redirects to an example production page; the main web is currently on development.",
-      spanish: "Un emprendimiento personal sobre vender localmente páginas web minimalistas, elegantes y accesibles económicamente. El link redirige a una página producto de ejemplo; la web principal está aún en desarrollo.",
+      default: "At Kamai, we build fully customized web systems down to the finest detail, regardless of their size and requirements. I take pride in having founded this start-up and in continuing working tirelessly for it's success. Today we provide systems of excelent quality to multiple clients and we never stop expanding into new markets.",
+      spanish: "En Kamai construimos sistemas web completos y personalizados hasta el último detalle, de cualquier tamaño y requerimientos. Me enorgullece haber comenzado este emprendimiento y seguir trabajando sin descanso para su éxito. Hoy brindamos sistemas de excelente calidad a múltiples clientes y siempre continuamos expandiéndonos a nuevos mercados.",
     },
   },
   {

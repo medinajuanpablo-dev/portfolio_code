@@ -150,7 +150,7 @@ const DIRECTED_STYLES = {
 
   toggler: "text-4xl text-slate-300 transition duration-1000 || nt<text-slate-600>",
 
-  sidebar: "fixed z-100 flex flex-col shadowed-box top-15 right-0 pl-4 pr-3 pt-6 h-screen w-6/12 bg-slate-200 transition duration-500 translate-x-100 rounded-l-md || sbo<translate-x-0>",
+  sidebar: "fixed z-100 flex flex-col shadowed-box top-15 right-0 pl-4 pr-3 pt-6 h-screen w-50 bg-slate-200 transition duration-500 translate-x-100 rounded-l-md || sbo<translate-x-0>",
   sidebarTitle: "text-center text-base text-sky-600",
   sidebarLang: "text-center text-base text-sky-600 mt-8 mb-2",
 
@@ -163,9 +163,9 @@ const DIRECTED_STYLES = {
   //Desktop only
 
   topRight: "flex items-center",
-  topLink: "flex justify-center items-center text-light text-slate-300 ml-4 text-sm cursor-pointer hover:text-sky-500 focus:text-sky-500 transition duration-300 | lg:text-lg lg:ml-6 || nt<text-slate-600>",
+  topLink: "flex justify-center items-center text-light text-slate-300 ml-3 text-sm cursor-pointer hover:text-sky-500 focus:text-sky-500 transition duration-300 | lg:text-base lg:ml-6 || nt<text-slate-600>",
   topLinkIcon: "mr-1 mt-1px | lg:mr-2",
-  topFlags: "flex | md:ml-4 md:border-l-1 md:border-slate-300 md:border-opacity-50 | lg:ml-6 lg:pl-2 || nt<md:border-slate-600>",
+  topFlags: "flex | md:ml-2 md:border-l-1 md:border-slate-300 md:border-opacity-50 | lg:ml-6 lg:pl-2 || nt<md:border-slate-600>",
 };
 
 const INDICATORS = [
@@ -192,7 +192,7 @@ function Flag({ emoji, langKey, lang, visible, setLang, bp }) {
 }
 
 const FLAG_DIR_STY = {
-  ct: "mt-2 leading-tight text-center text-slate-600 flex justify-between items-center text-lg border-1 pl-3 pr-2 rounded-md py-1 border-slate-300 transition duration-500 cursor-pointer | md:rounded-none md:border-transparent md:border-x-0 md:border-t-0 md:p-0 md:justify-center md:ml-2 md:text-sm md:mt-0 md:text-slate-300 md:border-b-1 md:ml-2 | lg:border-b-2 lg:ml-4 lg:text-lg lg:leading-normal || nt<text-slate-600'md:text-slate-600> se<border-sky-500'md:border-sky-500'border-opacity-100'md:border-opacity-80> ",
+  ct: "mt-2 leading-tight text-center text-slate-600 flex justify-between items-center text-lg border-1 pl-3 pr-2 rounded-md py-1 border-slate-300 transition duration-500 cursor-pointer | md:rounded-none md:border-transparent md:border-x-0 md:border-t-0 md:p-0 md:justify-center md:ml-2 md:text-sm md:mt-0 md:text-slate-300 md:border-b-1 | lg:border-b-2 lg:ml-4 lg:text-base lg:leading-normal || nt<text-slate-600'md:text-slate-600> se<border-sky-500'md:border-sky-500'border-opacity-100'md:border-opacity-80> ",
   emoji:
     "text-2xl mr-2 | md:mr-0 md:ml-1 md:text-lg md:w-auto | lg:text-xl lg:ml-2",
 };

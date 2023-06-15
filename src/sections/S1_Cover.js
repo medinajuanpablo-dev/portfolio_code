@@ -31,14 +31,14 @@ function Cover({ lang }) {
 
 //prettier-ignore
 const STYLES = {
-  ct: "relative h-screen px-4 pt-36 flex flex-col items-center | lg:pt-42",
+  ct: "relative h-screen px-4 pt-36 flex flex-col items-center h-180 | md:h-140 | lg:h-170 | xl:h-180",
   bg: "bg-cover bg-center",
 
-  title: "text-5.5xl tracking-wide text-stronger text-center text-slate-300 | lg:text-7xl",
+  title: "text-5.5xl tracking-wide text-stronger text-center text-slate-300 w-87 | sm:w-120 sm:text-6.5xl | md:w-180 | lg:w-220 lg:text-7xl | xl:w-auto xl:text-8xl",
 
-  subTitle: "border-dotted border-2 border-sky-600 w-full rounded-md text-mono text-3xl text-slate-300 text-opacity-90 text-shadow strongest text-center mt-16 py-3 px-3 w-10/12 tracking-wide | md:w-7/12 | lg:w-6/12 lg:mt-24 lg:text-4xl lg:border-3 || sLang<mt-16>",
+  subTitle: "border-dotted border-2 border-sky-600 w-70 rounded-md text-mono text-3xl text-slate-300 text-opacity-90 text-shadow strongest text-center mt-16 pt-2 pb-3 tracking-wide | sm:w-120 | lg:w-160 lg:pt-3 lg:mt-20 lg:text-4xl lg:border-3 || sLang<mt-16>",
 
-  arrow: "text-5.5xl animate-bounce text-slate-100 absolute bottom-20 cursor-pointer | md:bottom-8 || sLang<mt-34> ",
+  arrow: "text-5.5xl animate-bounce text-slate-100 absolute bottom-12 cursor-pointer | md:bottom-8 || sLang<mt-34> ",
 };
 
 const COVER_BACKGROUND =
@@ -46,8 +46,8 @@ const COVER_BACKGROUND =
 
 const TRANSLATE_TEXT = {
   subTitle: {
-    default: "Web Developer",
-    spanish: "Desarrollador Web",
+    default: "Frontend Developer",
+    spanish: "Desarrollador Frontend",
   },
 };
 

@@ -39,16 +39,16 @@ function Summary({ lang }) {
 
 //prettier-ignore
 const STYLES = {
-  ct: "relative pt-8 pb-76 px-6 | sm:px-10 sm:pb-120 sm:pt-12",
+  ct: "relative pt-8 pb-76 | sm:px-10 sm:pb-120 sm:pt-12",
   bg: "bg-contain bg-bottom bg-no-repeat bg-slate-100 | sm:bg-cover",
   
-  text: "mt-6 text-very-light text-slate-700 text-lg leading-relaxed tracking-wide text-center | sm:text-xl | md:text-lg | lg:text-xl",
+  text: "mt-6 text-very-light text-slate-700 text-lg leading-relaxed tracking-wide text-center w-87 mx-auto | sm:w-120 sm:text-xl | md:w-auto md:text-lg | lg:text-xl",
 
   //Desktop only
 
   wrapper: "flex",
   sideImage: "grow bg-right bg-cover",
-  contentBox: "bg-slate-100 w-7/12 shrink-0 px-10 py-10 | lg:w-6/12 lg:p-14",
+  contentBox: "bg-slate-100 w-7/12 shrink-0 px-10 py-10 | lg:w-6/12 lg:py-12",
 };
 
 const TRANSLATE_TEXT = {
