@@ -3,7 +3,6 @@ import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
 import { MdLaptop } from "react-icons/md";
 import { BsFillPersonFill } from "react-icons/bs";
 import { Element as ScrollableContainer } from "react-scroll";
-import { chunk } from "lodash";
 
 import { BgContainer, SectionTitle, CuteButton } from "@common/index";
 import { useBreakpoint } from "@static/react";
